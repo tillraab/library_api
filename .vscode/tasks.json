@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Docker Container",
+            "type": "shell",
+            "command": "./bin/build.sh",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Docker Container",
+            "type": "shell",
+            "command": "./bin/up.sh",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Down Docker Container",
+            "type": "shell",
+            "command": "./bin/down.sh",
+            "group": "none",
+            "problemMatcher": []
+        }
+    ]
+}
